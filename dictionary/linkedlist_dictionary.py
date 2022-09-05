@@ -88,8 +88,8 @@ class LinkedListDictionary(BaseDictionary):
         cur_node = self.head
         prev_node = None
 
-        # Check if the current head is the value
-        if cur_node.word_frequency == word_frequency:
+        # Check if the current head has the word
+        if cur_node.word_frequency.word == word_frequency.word:
             return False
 
         prev_node = cur_node
@@ -97,12 +97,11 @@ class LinkedListDictionary(BaseDictionary):
 
         # iterate through the list to find the matching word in node
         while cur_node:
-            if cur_node.word_frequency == word_frequency:
+            if cur_node.word_frequency.word == word_frequency.word:
                 return False
             prev_node = cur_node
             cur_node = cur_node.get_next()
 
-        new_node = ListNode(word_frequency)
         new_node = ListNode(word_frequency)
         if not self.head:
             self.head = new_node

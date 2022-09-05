@@ -69,7 +69,8 @@ class ArrayDictionary(BaseDictionary):
         # TO BE IMPLEMENTED
         # Check if the word exists in the dictionary
         for words in self.dict:
-            if (words[0] == word_frequency.word) & (words[1] == word_frequency.frequency):
+            # Checking if the word
+            if words[0] == word_frequency.word:
                 return False
         word = word_frequency.word, word_frequency.frequency
         self.dict.append(word)
