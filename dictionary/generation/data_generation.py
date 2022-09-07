@@ -3,6 +3,31 @@ import time
 import sys
 
 
+# python3 data_generation.py 2 100 20 without
+def output_samples(samples, filename):
+    """
+    Output the list of samples to a txt file, which we can use to sample our dictionaries
+    """
+    file = open(filename, "w")
+    for samples in samples:
+        file.write(str(samples) + "\n")
+    file.close()
+
+
+def convert_samples_to_words(data, filename, samples):
+    """
+    Take the samples and run them againest our sampledata and return a file that contains words
+    where they are samples from our data samples
+    """
+    sampleData = open(data, "r")
+    fileOutput = open(filename, "w")
+    for pos, line_num in enumerate(sampleData):
+        if pos in samples:
+            fileOutput.write(line_num)
+    sampleData.close()
+    fileOutput.close()
+
+
 class DataGenerator:
     # Program name.
     prog_name = "DataGenerator"
@@ -27,6 +52,7 @@ class DataGenerator:
         for i in range(samples_len):
             sample = random.randint(self.start_of_range, self.end_of_range)
             samples.append(sample)
+        #output_samples(samples, "test_output.txt")
         return samples
 
     def sample_without_replacement(self, samples_len):
@@ -52,20 +78,9 @@ class DataGenerator:
             t = random.randint(0, j + 1)
             if t < samples_len:
                 samples[t] = j + self.start_of_range
-
+        #output_samples(samples, "test_output.txt")
+        convert_samples_to_words("data/sampleData.txt", "output.txt", samples)
         return samples
-
-    def output_samples(self):
-        """
-        Output the list of samples to a txt file, which we can use to sample our dictionaries
-        """
-        # TODO
-
-    def convert_samples_to_words(self):
-        """
-        Take the samples and convert them to sampledata words for our dictionary
-        """
-        # TODO
 
     def add_operation_data(self):
         """
