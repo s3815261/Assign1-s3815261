@@ -1,4 +1,5 @@
 import sys
+import time
 from dictionary.word_frequency import WordFrequency
 from dictionary.base_dictionary import BaseDictionary
 from dictionary.array_dictionary import ArrayDictionary
@@ -30,8 +31,8 @@ def usage():
 
 if __name__ == '__main__':
     # Fetch the command line arguments
+    time_start = time.time()
     args = sys.argv
-
     if len(args) != 5:
         print('Incorrect number of arguments.')
         usage()
@@ -84,6 +85,7 @@ if __name__ == '__main__':
                 else:
                     output_file.write(f"NOT Found '{word}'\n")
 
+
             # add
             elif command == 'A':
                 word = command_values[1]
@@ -114,7 +116,9 @@ if __name__ == '__main__':
             else:
                 print('Unknown command.')
                 print(line)
-
+        time_end = time.time()
+        totalTime = round(time_end - time_start, 3)
+        print("Time Start(ns): " + str(time_start) + "\n" + "Time End (ns): " + str(time_end) + "\n" + "Total Time (ns): " + str(totalTime))
         output_file.close()
         command_file.close()
     except FileNotFoundError as e:
