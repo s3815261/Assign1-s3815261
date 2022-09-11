@@ -1,0 +1,164 @@
+ADD:
+python3 datagen.py 1 100000 500 data/sampleData200k.txt A add500.txt
+
+	python3 datagen.py 1 100000 1000 data/sampleData200k.txt A add1k.txt
+
+	python3 datagen.py 1 100000 5000 data/sampleData200k.txt A add5k.txt
+
+	python3 datagen.py 1 100000 10000 data/sampleData200k.txt A add10k.txt
+
+	python3 datagen.py 1 100000 20000 data/sampleData200k.txt A add20k.txt
+
+	python3 datagen.py 1 100000 50000 data/sampleData200k.txt A add50k.txt
+
+SEARCH:
+	python3 datagen.py 1 100000 500 data/sampleData200k.txt S search500.txt
+
+	python3 datagen.py 1 100000 1000 data/sampleData200k.txt S search1k.txt
+
+	python3 datagen.py 1 100000 5000 data/sampleData200k.txt S search5k.txt
+
+	python3 datagen.py 1 100000 10000 data/sampleData200k.txt S search10k.txt
+
+	python3 datagen.py 1 100000 20000 data/sampleData200k.txt S search20k.txt
+
+	python3 datagen.py 1 100000 50000 data/sampleData200k.txt S search50k.txt
+
+DELETE:
+	python3 datagen.py 1 100000 500 data/sampleData200k.txt D delete500.txt
+
+	python3 datagen.py 1 100000 1000 data/sampleData200k.txt D delete1k.txt
+
+	python3 datagen.py 1 100000 5000 data/sampleData200k.txt D delete5k.txt
+
+	python3 datagen.py 1 100000 10000 data/sampleData200k.txt D delete10k.txt
+
+	python3 datagen.py 1 100000 20000 data/sampleData200k.txt D delete20k.txt
+
+	python3 datagen.py 1 100000 50000 data/sampleData200k.txt D delete50k.txt
+
+AUTOCOMPLETE:
+
+python3 datagen.py 1 100000 500 data/sampleData200k.txt AC ac500.txt
+
+
+	python3 datagen.py 1 100000 1000 data/sampleData200k.txt AC ac1k.txt
+
+	python3 datagen.py 1 100000 5000 data/sampleData200k.txt AC ac5k.txt
+
+	python3 datagen.py 1 100000 10000 data/sampleData200k.txt AC ac10k.txt
+
+	python3 datagen.py 1 100000 20000 data/sampleData200k.txt AC ac20k.txt
+
+	python3 datagen.py 1 100000 50000 data/sampleData200k.txt AC ac50k.txt
+
+
+WORDS:
+	python3 datagen.py 1 100000 5000 data/sampleData200k.txt W words_5k.txt
+
+RUNNING ANALYSIS
+
+ADD
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add500.txt add500.out
+
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add1k.txt add1k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add5k.txt add5k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add10k.txt add10k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add20k.txt add20k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add50k.txt add50k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add500.txt add500.out
+
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add1k.txt add1k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add5k.txt add5k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add10k.txt add10k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add20k.txt add20k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/add_data/add50k.txt add50k.out
+
+Search
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search500.txt search500.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search1k.txt search1k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search5k.txt search5k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search10k.txt search10k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search20k.txt search20k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search50k.txt search50k.out
+
+Linked List
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search500.txt search500.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search1k.txt search1k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search5k.txt search5k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search10k.txt search10k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search20k.txt search20k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/search_data/search50k.txt search50k.out
+
+Delete
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete500.txt delete500.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete1k.txt delete1k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete5k.txt delete5k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete10k.txt delete10k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete20k.txt delete20k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete50k.txt delete50k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete500.txt delete500.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete1k.txt delete1k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete5k.txt delete5k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete10k.txt delete10k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete20k.txt delete20k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/delete_data/delete50k.txt delete50k.out
+
+Auto complete
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac500.txt ac500.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac1k.txt ac1k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac5k.txt ac5k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac10k.txt ac10k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac20k.txt ac20k.out
+
+python3 dictionary_file_based.py array dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac50k.txt ac50k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac500.txt ac500.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac1k.txt ac1k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac5k.txt ac5k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac10k.txt ac10k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac20k.txt ac20k.out
+
+python3 dictionary_file_based.py linkedlist dictionary/generation/data/words_5k.txt dictionary/generation/auto_complete_data/ac50k.txt ac50k.out

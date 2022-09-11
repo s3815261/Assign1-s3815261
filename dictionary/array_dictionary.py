@@ -11,7 +11,7 @@ import bisect
 # __copyright__ = 'Copyright 2022, RMIT University'
 # ------------------------------------------------------------------------
 
-# python3 dictionary_file_based.py array sampleDataToy.txt testToy.in testToy.out
+# python3 dictionary_file_based_measure_time.py array sampleDataToy.txt testToy.in testToy.out
 
 
 class ArrayDictionary(BaseDictionary):

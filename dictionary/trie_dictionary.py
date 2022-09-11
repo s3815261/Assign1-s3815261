@@ -9,7 +9,7 @@ from dictionary.word_frequency import WordFrequency
 # __author__ = 'Son Hoang Dau'
 # __copyright__ = 'Copyright 2022, RMIT University'
 # ------------------------------------------------------------------------
-# python3 dictionary_file_based.py trie sampleDataToy.txt testToy.in testToy.out
+# python3 dictionary_file_based_measure_time.py trie sampleDataToy.txt testToy.in testToy.out
 
 # Class representing a node in the Trie
 class TrieNode:
@@ -18,8 +18,7 @@ class TrieNode:
         self.letter = letter  # letter stored at this node
         self.frequency = frequency  # frequency of the word if this letter is the end of a word
         self.is_last = is_last  # True if this letter is the end of a word
-        self.children: dict[
-            str, TrieNode] = {}  # a hashtable containing children nodes, key = letter, value = child node
+        self.children: dict[str, TrieNode] = {}  # a hashtable containing children nodes, key = letter, value = child node
 
 
 class TrieDictionary(BaseDictionary):

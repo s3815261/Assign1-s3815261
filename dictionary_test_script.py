@@ -20,9 +20,9 @@
 # Input:
 #
 #   code directory : directory where the python files reside.  E.g., if directory specified is Assign1-s1234,
-#       then Assign1-s1234/dictionary_file_based.py should exist.
+#       then Assign1-s1234/dictionary_file_based_measure_time.py should exist.
 #   name of implementation to test: This is the name of the implementation to test.  The names
-#       should be the same as specified in the script or in dictionary_file_based.py. E.g.- "list", or "hashtable", or "tst"
+#       should be the same as specified in the script or in dictionary_file_based_measure_time.py. E.g.- "list", or "hashtable", or "tst"
 #   data filename: This is the input data file consists of a list of point information.
 #       NOTE- the script expects the data file to be in the same directory as the script.
 #       E.g. if the script is in the directory path /home/s1234/dictionary_test_script.py and
@@ -101,7 +101,7 @@ def main():
         sys.exit(1)
 
     # python file to run
-    sExec = "dictionary_file_based.py"
+    sExec = "dictionary_file_based_measure_time.py"
 
     os.chdir(sCodeDir)
 
